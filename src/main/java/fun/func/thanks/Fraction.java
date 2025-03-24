@@ -11,10 +11,20 @@ public class Fraction {
         this.b = b;
     }
 
-
+    private int gcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }
 
     void print(){
-        System.out.println();
+        if (a == b) {
+            System.out.println(1);
+        } else {
+            System.out.println(a/gcd(a,b) + "/" + b/gcd(a,b));
+        }
     }
 
     Fraction plus(Fraction f){
