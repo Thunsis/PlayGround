@@ -22,6 +22,8 @@ public class Database {
         d.add(new CD("CD2", "artist2", 10, 30, false, "..."));
         d.add(new DVD("DVD1", "director1", 90, true, "..."));
         d.add(new DVD("DVD2", "director2", 120, false, "..."));
+        d.add(new VideoGame("VideoGame1", 2, 10, false, "..."));
+        // 代码不需要修改即可适应新的数据，叫可拓展性，修改后可适应新的数据，叫可维护性
         // 类就是一个类型，子类也是子类型的意思，
         // 子类的对象可以被当作父类的对象来使用，
         // 可以赋值给父类的变量，Item v1 = new Item(); Item v2 = new cd(); Item v3 = new dvd();
