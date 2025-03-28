@@ -1,21 +1,27 @@
 package fun.func.thanks.castle;
 
+import java.util.HashMap;
+import java.util.Set;
+
 public class Room {
-    public String description;
-    public Room northExit;
-    public Room southExit;
-    public Room eastExit;
-    public Room westExit;
+    private final String description;
+    private final HashMap<String, Room> nextRooms = new HashMap<>();
+
 
     public Room(String description) {
         this.description = description;
     }
 
-    public void setExits(Room north, Room east, Room south, Room west) {
-        if (north != null) northExit = north;
-        if (east != null) eastExit = east;
-        if (south != null) southExit = south;
-        if (west != null) westExit = west;
+    public void setExit(String direction, Room nextRoom) {
+        nextRooms.put(direction, nextRoom);
+    }
+
+    public Room getNextRoom(String direction) {
+        return this.nextRooms.get(direction);
+    }
+
+    public Set<String> getDirections() {
+        return this.nextRooms.keySet();
     }
 
     @Override
