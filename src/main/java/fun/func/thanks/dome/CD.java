@@ -15,6 +15,7 @@ public class CD extends Item{
     }
 
     @Override
+    // 子类成员函数名和父类同名时，使用Override来定义子类的成员函数实现逻辑
     public void print() {
         System.out.println(super.getTitle() + ":" + artist);
     }

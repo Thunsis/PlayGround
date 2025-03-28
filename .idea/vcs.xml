@@ -2,9 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="" />
-    <mapping directory="$PROJECT_DIR$/../DINT-CORE" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../cm-streaming" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../marketing-tracking" vcs="Git" />
   </component>
 </project>
